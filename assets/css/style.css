@@ -397,6 +397,12 @@ h1 {
   background-color: rgba(255, 255, 255, 0.1);
   font-size: 1.125rem;
   letter-spacing: 0.1em;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.btn:hover, .btn:focus {
+  color: #d66926;
 }
 
 .header {
