@@ -17,3 +17,10 @@ a {
     color: $color-light;
     text-decoration: none;
 }
+
+h1 {
+    font-size: 3.75rem;
+    letter-spacing: 0.1em;   
+    font-weight: 300;
+    font-family: $font-header;    
+}

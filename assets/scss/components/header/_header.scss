@@ -10,4 +10,9 @@
     background-position: 50% 50%;
     background-size: cover;
     position: relative;
+
+    display: grid;
+    align-content: center; 
+
+    color: $color-light;   
 }

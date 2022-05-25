@@ -1,0 +1,25 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-logo {
+    display: flex;
+    align-items: center;
+
+    font-size: 1.5rem;
+    line-height: 0.23em;
+    letter-spacing: 0.23em;
+    font-weight: 400;
+    font-family: "Roboto";
+
+    &__link {}
+
+    &__accent {
+        border: 3px solid $color-highlight;       
+        padding: 15px 10px;
+        margin: 0;
+        display: inline-block;
+        
+        
+        
+    }
+}

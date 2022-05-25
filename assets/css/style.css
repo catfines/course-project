@@ -373,6 +373,32 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 3.75rem;
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  font-family: "Roboto Slab", serif;
+}
+
+.btn {
+  min-width: 250px;
+  height: 60px;
+  border: 2px solid #ffffff;
+  padding: 0.5em 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 1.125rem;
+  letter-spacing: 0.1em;
+}
+
 .header {
   min-height: 100vh;
   padding-top: 100px;
@@ -382,6 +408,10 @@ a {
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  color: #ffffff;
 }
 
 .header-overlay {
@@ -394,10 +424,84 @@ a {
   left: 0;
 }
 
+.header-menu {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.header-menu__container {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: auto 1fr;
+}
+
+.header-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  line-height: 0.23em;
+  letter-spacing: 0.23em;
+  font-weight: 400;
+  font-family: "Roboto";
+}
+.header-logo__accent {
+  border: 3px solid #d53d27;
+  padding: 15px 10px;
+  margin: 0;
+  display: inline-block;
+}
+
+.header-navbar__btn {
+  display: none;
+}
+.header-navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 0;
+  padding: 0;
+}
+.header-navbar__item {
+  padding: 20px 10px;
+}
+.header-navbar__link {
+  padding: 20px 10px;
+  display: block;
+  -webkit-transition: color 0.5s;
+  -o-transition: color 0.5s;
+  transition: color 0.5s;
+}
+.header-navbar__link:hover, .header-navbar__link:focus {
+  color: #d66926;
+}
+
 .header-content {
   position: relative;
   z-index: 1;
 }
 .header-content__title {
-  margin: 0;
+  margin: 0 0 66px 0;
+  text-align: center;
+}
+.header-content__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-family: "Roboto";
 }
