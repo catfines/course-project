@@ -11,6 +11,7 @@ html {
     font-size: $font-size;
     font-family: $font-main;
     color: $color-gray;
+    overflow-y: scroll;
 }
 
 a {
@@ -19,8 +20,12 @@ a {
 }
 
 h1 {
-    font-size: 3.75rem;
-    letter-spacing: 0.1em;   
+    @include lg-min {
+        font-size: 3.75rem;
+    }
+
+    letter-spacing: 0.08em;
     font-weight: 300;
-    font-family: $font-header;    
+    font-family: $font-header;
+    line-height: 1.2em;
 }

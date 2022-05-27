@@ -2,21 +2,26 @@
 @use "../mixins" as *;
 
 .btn {
-    min-width: 250px;
-    height: 60px;
-    border: 2px solid $color-light;
     padding: 0.5em 1em;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba($color-light, 0.1);
-
     font-size: 1.125rem;
     letter-spacing: 0.1em;
+    transition: color 0.3s;
 
-    transition: color 0.5s;
     &:hover,
     &:focus {
         color: $color-accent;
     }
+}
+
+.btn--light {
+    @include lg-min {
+        min-width: 250px;
+        height: 60px;
+    }
+
+    background-color: rgba($color-light, 0.1);
+    border: 2px solid $color-light;
 }
