@@ -11,19 +11,16 @@
     &__list {
         display: grid;
         justify-content: end;
-        grid-template-columns: repeat(auto-fit, minmax(50px, max-content));        
+        grid-template-columns: repeat(auto-fit, minmax(50px, max-content));
         gap: 20px;
         @include unlist(0 -10px 0 0);
     }
-
-    // &__item {}
 
     &__link {
         padding: $gap $gap-sm;
         display: block;
         transition: color 0.3s;
-        font-size: 1.125rem;   
-            
+        font-size: 1.125rem;
 
         &:hover,
         &:focus {

@@ -410,7 +410,6 @@ h1 {
 .btn--primary {
   background-color: rgba(45, 54, 81, 0.8);
   border: 2px solid #2d3651;
-  min-width: 350px;
   height: 60px;
 }
 
@@ -515,20 +514,15 @@ h1 {
           justify-content: center;
   gap: 20px;
 }
-
 .skills__container {
   display: grid;
-  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: "a1 a1 a2 a3" "a4 a5 a5 a6" "a7 a8 a9 a6";
-  padding: 10px;
   grid-auto-rows: calc(33.33vh - 13.3333333333px);
 }
 .skills__actions {
   margin-top: 20px;
-  margin-bottom: 40px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,6 +636,15 @@ h1 {
   grid-area: a9;
 }
 
+@media (min-width: 576px) {
+  .skills {
+    padding: 10px;
+  }
+  .skills__container {
+    gap: 10px;
+  }
+}
+
 @media (min-width: 992px) {
   h1 {
     font-size: 3.75rem;
@@ -650,7 +653,54 @@ h1 {
     min-width: 250px;
     height: 60px;
   }
+  .btn--primary {
+    min-width: 350px;
+    height: 60px;
+  }
   .header-content__title {
     margin: 0 0 53px 0;
+  }
+}
+
+@media (max-width: 991.8px) and (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .btn--light {
+    min-width: 200px;
+    height: 50px;
+  }
+  .btn--primary {
+    min-width: 350px;
+    height: 66px;
+  }
+}
+
+@media (max-width: 767.8px) {
+  h1 {
+    font-size: 1.075rem;
+  }
+  .btn--light {
+    min-width: 170px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 767.8px) and (min-width: 576px) {
+  .btn--primary {
+    min-width: 350px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 575.8px) {
+  .btn--primary {
+    width: 100%;
+  }
+  .skills {
+    padding: 20px;
+  }
+  .skills__container {
+    gap: 20px;
   }
 }

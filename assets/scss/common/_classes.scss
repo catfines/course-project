@@ -22,6 +22,16 @@
         height: 60px;
     }
 
+    @include lg-md {
+        min-width: 200px;
+        height: 50px;
+    }
+
+    @include md {
+        min-width: 170px;
+        height: 40px;
+    }
+
     background-color: rgba($color-light, 0.1);
     border: 2px solid $color-light;
 }
@@ -29,6 +39,25 @@
 .btn--primary {
     background-color: rgba($color-primary, 0.8);
     border: 2px solid $color-primary;
-    min-width: 350px;
+
     height: 60px;
+
+    @include lg-min {
+        min-width: 350px;
+        height: 60px;
+    }
+
+    @include lg-md {
+        min-width: 350px;
+        height: 66px;
+    }
+
+    @include md-sm {
+        min-width: 350px;
+        height: 60px;
+    }
+
+    @include sm {
+        width: 100%;
+    }
 }
