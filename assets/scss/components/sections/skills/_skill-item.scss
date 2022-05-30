@@ -13,7 +13,15 @@
         z-index: 1;
         @include abs-position;
         font-size: 1.25rem;
-        letter-spacing: 0.1em;        
+        letter-spacing: 0.1em;   
+        
+        @include md-sm {
+            font-size: 1.125rem;
+        }
+
+        @include sm {
+            font-size: 1.125rem;
+        }
     }
 
     &__link {
