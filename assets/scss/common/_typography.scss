@@ -14,10 +14,7 @@ html {
     overflow-y: scroll;
 }
 
-a {
-    color: $color-light;
-    text-decoration: none;
-}
+
 
 h1 {
     @include lg-min {
@@ -29,11 +26,16 @@ h1 {
     }
 
     @include md {
-        font-size: 1.075rem;
+        font-size: 1.875rem;
     }
 
     letter-spacing: 0.08em;
     font-weight: 300;
     font-family: $font-header;
     line-height: 1.2em;
+}
+
+a {
+    color: $color-light;
+    text-decoration: none;
 }
