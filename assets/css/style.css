@@ -580,7 +580,6 @@ a {
 }
 .skills__container {
   display: grid;
-  grid-auto-rows: calc(33.33vh - 13.3333333333px);
 }
 .skills__actions {
   margin-top: 20px;
@@ -709,6 +708,12 @@ a {
   }
 }
 
+@media (min-height: 691px) {
+  .skills__container {
+    grid-auto-rows: calc(33.33vh - 13.3333333333px);
+  }
+}
+
 @media (min-width: 768px) {
   .header-navbar__btn {
     display: none;
@@ -819,6 +824,12 @@ a {
   }
   .skill-item__title {
     font-size: 1.125rem;
+  }
+}
+
+@media (max-height: 690px) {
+  .skills__container {
+    grid-auto-rows: 216.6666666667px;
   }
 }
 
